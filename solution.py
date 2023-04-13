@@ -13,4 +13,4 @@ def solution(x_success: int,
     py=y_success/y_cnt
     dis=px*(1-px)/x_cnt + py*(1-py)/y_cnt
     
-    return (py-px)/np.sqrt(dis) >= norm.ppf(0.02)
+    return (py-px)/np.sqrt(dis) <= norm.ppf(0.02)
